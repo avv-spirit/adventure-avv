@@ -1,0 +1,21 @@
+.page-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  width: auto;
+}
+
+@media (max-width: $tablet-width) {
+  .page-main {
+    width: auto;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .page-main {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+  }
+}

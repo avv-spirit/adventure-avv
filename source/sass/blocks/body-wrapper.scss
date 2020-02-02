@@ -1,0 +1,56 @@
+.body-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  margin: 0 auto;
+  padding: 0;
+
+  font-family: "TT Norms", sans-serif;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 400;
+
+  background-color: $white;
+}
+
+.scroll-btn {
+  display: none;
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  right: 50px;
+  bottom: 30px;
+
+  border: 0;
+  border-radius: 30px;
+  background-size: 60%;
+  background-color: $white;
+  //background-image: url("../img/arrow-button.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: rotate(180deg);
+  cursor: pointer;
+}
+
+.scroll-btn:hover {
+  width: 41px;
+  height: 41px;
+  opacity: 0.8;
+  background-size: 61%;
+}
+
+/*@media (max-width: $tablet-width) {
+  .body-wrapper {
+    width: auto;
+    margin: 0;
+  }
+}*/
+
+@media (max-width: $mobile-width) {
+  .body-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin: 0;
+  }
+}

@@ -1,0 +1,53 @@
+.main-nav {
+  display: flex;
+  flex-direction: row;
+  background-color: $light-blue;
+
+  font-family: "TT Norms", sans-serif;
+  text-transform: uppercase;
+}
+
+.main-nav__toggle {
+  display: none;
+}
+
+.main-nav__wrapper {
+  margin: 0 auto;
+  width: 1090px;
+}
+
+.main-nav__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.main-nav__item {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  text-align: center;
+  list-style: none;
+}
+
+.main-nav__item:hover {
+  background-color: $light-blue-hover;
+}
+
+.main-nav__item a {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  margin: 0;
+  padding: 15px;
+  border-bottom: none;
+  color: $white;
+  font-size: $font-middle;
+  font-weight: 400;
+  text-decoration: none;
+}

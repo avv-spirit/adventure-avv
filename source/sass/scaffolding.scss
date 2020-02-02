@@ -1,0 +1,61 @@
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@font-face {
+  font-family: "TT Norms";
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/../fonts/TTNorms-Bold.woff") format("woff"), local("TT Norms Bold"), url("../fonts/TTNorms-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "TT Norms";
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/../fonts/TTNorms-Light.woff") format("woff"), local("TT Norms Light"), url("../fonts/TTNorms-Light.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "TT Norms";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/../fonts/TTNorms-Medium.woff") format("woff"), local("TT Norms Medium"), url("../fonts/TTNorms-Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "TT Norms";
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/../fonts/TTNorms-Regular.woff") format("woff"), local("TT Norms Regular"), url("../fonts/TTNorms-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "TT Norms";
+  font-weight: 800;
+  font-style: normal;
+  src: url("../fonts/../fonts/TTNorms-ExtraBold.woff") format("woff"), local("TT Norms ExtraBold"), url("../fonts/TTNorms-ExtraBold.woff2") format("woff2");
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
