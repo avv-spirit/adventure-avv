@@ -3,17 +3,14 @@
   flex-direction: row;
 
   margin: 0 auto;
+  margin-top: 2px;
   width: 1200px;
+
 
   color: $white;
   font-family: "Open Sans", sans-serif;
   text-transform: uppercase;
-
 }
-
-/*.main-nav__logo {
-  background-image: url("../img/logo-avv.png");
-}*/
 
 .main-nav__avv {
   width: 150px;
@@ -28,8 +25,20 @@
   display: flex;
   flex-direction: row;
 
-  width: 500px;
   margin-left: 100px;
+}
+
+.main-nav__item {
+  position: relative;
+  display: flex;
+}
+
+.main-nav__item:hover {
+  background-color: #333333;
+}
+
+.main-nav__item:first-child:hover {
+  background-color: transparent;
 }
 
 .main-nav__list {
@@ -40,13 +49,73 @@
   list-style: none;
 }
 
+.main-nav__home {
+  width: 14px;
+  height: 14px;
+  margin-right: 8px;
+  margin-bottom: 2px;
+  fill: $white;
+}
+
+.main-nav__web {
+  width: 14px;
+  height: 14px;
+  margin-right: 8px;
+  margin-bottom: 2px;
+  fill: $white;
+}
+
+.main-nav__cg {
+  width: 14px;
+  height: 14px;
+  margin-right: 8px;
+  fill: $white;
+}
+
+.main-nav__about {
+  width: 14px;
+  height: 14px;
+  margin-right: 8px;
+  margin-bottom: 1px;
+  fill: $white;
+}
+
+.main-nav__contacts {
+  width: 14px;
+  height: 14px;
+  margin-right: 8px;
+  margin-bottom: 1px;
+  fill: $white;
+}
+
 .main-nav__list a {
-  display: block;
+  display: flex;
+  align-items: center;
   padding: 12px 21px;
-  padding-bottom: 13px;
 
   font-size: $font-small;
   line-height: 24px;
+  font-weight: 600;
   color: #ffffff;
   text-decoration: none;
+
+  &:hover .main-nav__home {
+    fill: #13aff0;
+  }
+
+  &:hover .main-nav__web {
+    fill: #13aff0;
+  }
+
+  &:hover .main-nav__cg {
+    fill: #13aff0;
+  }
+
+  &:hover .main-nav__about {
+    fill: #13aff0;
+  }
+
+  &:hover .main-nav__contacts {
+    fill: #13aff0;
+  }
 }

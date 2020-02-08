@@ -1,0 +1,46 @@
+.intro__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 15px;
+}
+
+.intro__text {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  width: 710px;
+  padding-left: 32px;
+  padding-top: 10px;
+  background-color: #171717;
+  border-radius: 20px;
+  z-index: 0;
+}
+
+.intro__text::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: -74px;
+  width: 400px;
+  height: 260px;
+
+  background-color: #171717;
+  transform: skew(-30deg);
+  z-index: -1;
+}
+
+.intro__wrapper p {
+  color: $white;
+}
+
+.intro__welcome {
+  color: $white;
+  text-transform: uppercase;
+}
