@@ -6,7 +6,8 @@
   width: auto;
   /*background: rgb(2,0,36);
   background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(219,20,244,1) 22%, rgba(35,250,255,1) 48%, rgba(0,67,231,1) 58%, rgba(0,0,0,1) 86%);*/
-  background-color: $black-header;
+  background-color: $gray-main;
+  //background-color: white;
 }
 
 @media (max-width: $tablet-width) {
