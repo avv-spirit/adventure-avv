@@ -16,8 +16,9 @@
   justify-content: flex-start;
 
   width: 710px;
+  height: 275px;
   padding-left: 32px;
-  padding-top: 10px;
+  //padding-top: 10px;
   background-color: $gray-black;
   border-radius: 20px;
   z-index: 0;
@@ -59,4 +60,5 @@
 
 .intro__photo {
   width: 400px;
+  height: 275px;
 }
