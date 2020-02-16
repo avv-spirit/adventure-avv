@@ -46,6 +46,18 @@
   border-radius: 3px;
 }
 
+.page-footer__item:nth-child(1):hover {
+  background-color: #2d4372;
+  transition: 0.3s;
+}
+
+.page-footer__item:nth-child(2):hover {
+  background-color: #2694e9;
+  transition: 0.3s;
+  /*opacity: 0.8;
+  transition: opacity 0.2s linear;*/
+}
+
 .page-footer__link {
   display: flex;
   padding: 5px 10px;
@@ -83,30 +95,6 @@
 }
 
 /*
-.page-footer__accordion-container a {
-  color: $white;
-  text-decoration: none;
-}
-
-.page-footer__accordion-container ul {
-  padding: 0;
-}
-
-.page-footer__accordion-container li {
-  list-style: none;
-}
-
-.page-footer__link-header {
-  margin-bottom: 15px;
-}
-
-.page-footer__copyright-wrapper {
-  width: 1090px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-around;
-}
-
 @media (max-width: $tablet-width) {
   .page-footer__container {
     width: 768px;
