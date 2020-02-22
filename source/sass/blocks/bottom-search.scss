@@ -1,0 +1,33 @@
+.bottom-search {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  color: $white;
+  background-color: #222222;
+  border-bottom: 1px solid #333333;
+}
+
+.bottom-search p {
+  margin: 0 20px;
+}
+
+.bottom-search__button {
+  border: 0;
+  margin-left: 25px;
+  padding: 5px 10px;
+
+  font-size: $font-small;
+  color: $white;
+  border-radius: 30px;
+  background-color: #13aff0;
+}
+
+.bottom-search__button:hover {
+  transition: 0.7s;
+  background-color: #3283cc;
+}

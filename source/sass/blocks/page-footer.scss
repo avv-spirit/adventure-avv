@@ -88,8 +88,13 @@
 }
 
 .page-footer__copyright {
-  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
   color: #9b9b9b;
+  background-color: #171717;
   font-size: 12px;
   font-weight: 400;
 }
