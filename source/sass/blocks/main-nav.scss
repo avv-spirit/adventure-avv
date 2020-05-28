@@ -41,6 +41,10 @@
   background-color: transparent;
 }
 
+.main-nav__item--visible:first-child:hover {
+  background-color: #333333;
+}
+
 .main-nav__list {
   display: flex;
   flex-direction: row;
