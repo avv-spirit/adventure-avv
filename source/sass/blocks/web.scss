@@ -1,11 +1,7 @@
 .web {
   width: auto;
+  margin: 50px 0;
   color: $white;
-
-  /*background-image: url("../img/code.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;*/
 }
 
 .web__wrapper {
@@ -16,6 +12,7 @@
 }
 
 .web__title {
+  padding-bottom: 25px;
   color: $white;
   text-transform: uppercase;
   text-align: center;
@@ -25,7 +22,6 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  //align-items: center;
   flex-wrap: wrap;
 
   width: 1200px;

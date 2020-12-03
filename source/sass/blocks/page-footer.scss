@@ -47,6 +47,12 @@
   margin: 0 20px;
 }
 
+.page-footer__search a {
+  margin: 0 20px;
+  text-decoration: none;
+  color: $white;
+}
+
 .page-footer__search p:first-child {
   margin-left: 0;
 }
