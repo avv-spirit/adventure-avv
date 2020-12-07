@@ -1,11 +1,7 @@
 .main-nav {
   display: flex;
   flex-direction: row;
-
-  margin: 0 auto;
-  margin-top: 2px;
-  width: 1200px;
-
+  justify-content: center;
 
   color: $white;
   font-family: "Open Sans", sans-serif;
@@ -51,6 +47,7 @@
   flex-wrap: wrap;
 
   margin: 0;
+  padding: 0;
   list-style: none;
 }
 

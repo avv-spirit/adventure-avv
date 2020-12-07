@@ -1,0 +1,38 @@
+.cg-page {
+  width: auto;
+  margin-top: 130px;
+}
+
+.cg-page__about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: $white;
+
+  box-sizing: border-box;
+}
+
+.cg-page__about h2 {
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+.cg-page__artist {
+  margin-top: 5px;
+  margin-bottom: 0;
+  font-size: $font-btn;
+  font-weight: 200;
+}
+
+.cg-page__artstation {
+  margin: 0;
+  text-decoration: none;
+  color: $art-blue;
+  transition-duration: 0.4s;
+}
+
+.cg-page__artstation:hover {
+  color: $art-blue-hover;
+  transition: all 0.5s ease;
+}
