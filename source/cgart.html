@@ -8,7 +8,10 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="icon" href="img/adventure-avv.ico" type="image/x-icon">
     <script src="js/picturefill.min.js" async=""></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="js/picturefill.min.js" async=""></script>
   </head>
   <body>
     <div class="body-wrapper">
@@ -30,15 +33,41 @@
         </nav>
       </header>
       <main class="page-main">
-        <section class="cg-page">
-          <div class="cg-page__about">
-            <img class="cg-page__logo" src="img/avv_spirit.png" alt="Логотип avv_spirit" width="120" height="120">
-            <h2>Vladimir Azarov</h2>
-            <p class="cg-page__artist">3D Character Artist</p>
-            <a href="https://www.artstation.com/avv_spirit" class="cg-page__artstation">www.artstation.com/avv_spirit</a>
-            <div class="cg-page__description">
+        <section class="cg-avatar">
+          <div class="cg-avatar__about">
+            <div class="cg-avatar__media">
+              <img class="cg-avatar__logo" src="img/avv_spirit.png" alt="Логотип avv_spirit">
+              <h2>Vladimir Azarov</h2>
+              <p class="cg-avatar__artist">3D Character Artist</p>
+              <a href="https://www.artstation.com/avv_spirit" class="cg-avatar__artstation">www.artstation.com/avv_spirit</a>
+            </div>
+          </div>
+        </section>
+        <section class="cg-gallery">
+          <div class="cg-gallery__projects">
+            <div class="cg-gallery__description">
               <h2>CG Art</h2>
-              <p>CG - В современном мире больше известно, как компьютерная графика. В данном случае речь пойдёт об игровой графике, так как в моём случае я делаю графику, 3D модели для игр и анимации.</p>
+              <p>CG - В современном мире больше известно, как компьютерная графика. В данном случае речь пойдёт об игровой графике, так как в моём случае я делаю графику, 3D модели для игр и анимации. Все мои работы представленные ниже так же доступны на сайте ArtStation.</p>
+              <p>
+                Software:<br>
+                <br>
+                - ZBrush;<br>
+                - Maya;<br>
+                - Blender;<br>
+                - Substance Painter;<br>
+                - Substance Designer;<br>
+                - Unreal Engine 4;<br>
+                - Marmoset Toolbug
+              </p>
+            </div>
+            <div class="cg-gallery__item">
+              <p>Wind girl</p>
+              <p>В феврале-марте 2020 года я впервые взялся за програму ZBrush, спустя несколько недель освоился с ней и уже анатомически стал скульптить первые бюсты людей, все более узнавая многие тонкости. Данная работа была самой первой и качественной, полный скульпт с перерывами за два месяца, только hi-poly, без ретопологии. </p>
+              <div class="cg-gallery__wrapper">
+                <a data-fancybox="gallery" href="img/1_art.jpg" data-caption="Wind Girl"><img src="img/1_art.jpg" alt="Wind girl" width="400"></a>
+                <a data-fancybox="gallery" href="img/2_art.jpg" data-caption="Wind Girl"><img src="img/2_art.jpg" alt="Wind girl" width="400"></a>
+                <a data-fancybox="gallery" href="img/3_art.jpg" data-caption="Wind Girl"><img src="img/3_art.jpg" alt="Wind girl" width="400"></a>
+              </div>
             </div>
           </div>
         </section>
@@ -48,7 +77,7 @@
           <div class="page-footer__search">
             <p class="page-footer__mail-tel"><strong>Mail:</strong> avvspirit@gmail.com</p>
             <a href="Tel: +79651021083" class="page-footer__mail-tel"><strong>Tel:</strong> +79651021083</a>
-            <button class="page-footer__call-button">Связаться со мной</button>
+            <!--<button class="page-footer__call-button">Связаться со мной</button>-->
           </div>
           <div class="page-footer__social-wrapper">
             <div class="page-footer-social">

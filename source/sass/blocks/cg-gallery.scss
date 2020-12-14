@@ -1,0 +1,36 @@
+.cg-gallery {
+  color: $white;
+  margin-bottom: 50px;
+}
+
+.cg-gallery__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 1300px;
+}
+
+.cg-gallery__projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 80px;
+}
+
+.cg-gallery__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 1300px;
+}
+
+.cg-gallery__item p:first-child {
+  text-decoration: underline;
+}
+
+.cg-gallery__wrapper {
+  display: block;
+}

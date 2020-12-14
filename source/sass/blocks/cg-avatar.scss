@@ -1,9 +1,9 @@
-.cg-page {
+.cg-avatar {
   width: auto;
   margin-top: 130px;
 }
 
-.cg-page__about {
+.cg-avatar__about {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -13,26 +13,44 @@
   box-sizing: border-box;
 }
 
-.cg-page__about h2 {
+.cg-avatar__media {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: $white;
+
+  box-sizing: border-box;
+  border-bottom: 1px solid $gray-black;
+}
+
+.cg-avatar__media h2 {
   margin-top: 30px;
   margin-bottom: 0;
 }
 
-.cg-page__artist {
+.cg-avatar__artist {
   margin-top: 5px;
   margin-bottom: 0;
   font-size: $font-btn;
   font-weight: 200;
 }
 
-.cg-page__artstation {
+.cg-avatar__artstation {
   margin: 0;
+  padding-bottom: 20px;
   text-decoration: none;
   color: $art-blue;
   transition-duration: 0.4s;
 }
 
-.cg-page__artstation:hover {
+.cg-avatar__artstation:hover {
   color: $art-blue-hover;
   transition: all 0.5s ease;
+}
+
+.cg-avatar__logo {
+  min-width: 120px;
+  width: calc(10% - 100px);
 }

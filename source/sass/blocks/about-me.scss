@@ -1,0 +1,12 @@
+.about-me {
+  width: auto;
+  color: $white;
+  margin-top: 100px;
+}
+
+.about-me__wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}

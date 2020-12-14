@@ -1,78 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Adventure-AVV</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link href="css/style.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap&subset=cyrillic" rel="stylesheet">
-  <script src="js/picturefill.min.js" async=""></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-</head>
-<body>
-<div class="body-wrapper">
-  <header class="page-header">
-    <nav class="main-nav main-nav--closed main-nav--nojs">
-      <a class="main-nav__logo" href="index.html">
-        <img class="main-nav__avv" src="img/logo_avv.png" alt="Логотип">
-      </a>
-      <button class="main-nav__toggle" type="button" aria-label="Открыть меню"><span class="visually-hidden">Открыть меню</span></button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--visible"><a href="index.html"><svg class="main-nav__home" width="16" height="16"><use xlink:href="img/sprite.svg#icon-home"></use></svg>Home</a></li>
-          <li class="main-nav__item"><a href="web.html"><svg class="main-nav__web" width="16" height="16"><use xlink:href="img/sprite.svg#icon-web"></use></svg>Web</a></li>
-          <li class="main-nav__item"><a href="cgart.html"><svg class="main-nav__cg" width="16" height="16"><use xlink:href="img/sprite.svg#icon-cg"></use></svg>CG Art</a></li>
-          <li class="main-nav__item"><a href="about.html"><svg class="main-nav__about" width="16" height="16"><use xlink:href="img/sprite.svg#icon-about"></use></svg>About Me</a></li>
-          <li class="main-nav__item"><a href="contacts.html"><svg class="main-nav__contacts" width="16" height="16"><use xlink:href="img/sprite.svg#icon-contacts"></use></svg>Contacts</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-  <main class="page-main">
-    <section class="cg-about">
-      <div class="#">About</div>
-    </section>
-  </main>
-  <footer class="page-footer">
-    <div class="page-footer__wrapper">
-      <!--<a class="page-footer" href="#"></a>-->
-      <div class="page-footer__search">
-        <p class="page-footer__mail-tel"><strong>Mail:</strong> avvspirit@gmail.com</p>
-        <p class="page-footer__mail-tel"><strong>Tel:</strong> +79651021083</p>
-        <button class="page-footer__call-button">Связаться со мной</button>
-      </div>
-      <div class="page-footer__social-wrapper">
-        <div class="page-footer-social">
-          <ul class="page-footer__list">
-            <li class="page-footer__item">
-              <a class="page-footer__link page-footer__link--facebook" href="https://www.facebook.com/avvspirit" tabindex="0" aria-label="Перейти в Facebook">
-                <span class="visually-hidden">Facebook</span>
-                <svg class="page-footer__facebook" width="16" height="16"><use xlink:href="img/sprite.svg#icon-facebook"></use></svg>
-                <span class="page-footer__description">Follow me on Facebook</span>
-              </a>
-            </li>
-            <li class="page-footer__item">
-              <a class="page-footer__link page-footer__link--telegram" href="https://t.me/avv_spirit" tabindex="0" aria-label="Перейти в Telegram">
-                <span class="visually-hidden">Telegram</span>
-                <svg class="page-footer__telegram" width="16" height="16"><use xlink:href="img/sprite.svg#icon-telegram"></use></svg>
-                <span class="page-footer__description">Follow me on Telegram</span>
-              </a>
-            </li>
-            <li class="page-footer__item">
-              <a class="page-footer__link page-footer__link--instagram" href="https://www.instagram.com/avv_spirit/" tabindex="0" aria-label="Перейти в Instagram">
-                <span class="visually-hidden">Instagram</span>
-                <svg class="page-footer__instagram" width="16" height="16"><use xlink:href="img/sprite.svg#icon-instagram"></use></svg>
-                <span class="page-footer__description">Follow me on Instagram</span>
-              </a>
-            </li>
-          </ul>
+  <head>
+    <meta charset="UTF-8">
+    <title>Adventure-AVV</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="icon" href="img/adventure-avv.ico" type="image/x-icon">
+    <script src="js/picturefill.min.js" async=""></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="js/picturefill.min.js" async=""></script>
+  </head>
+  <body>
+    <div class="body-wrapper">
+      <header class="page-header">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+          <a class="main-nav__logo" href="index.html">
+            <img class="main-nav__avv" src="img/logo_avv.png" alt="Логотип">
+          </a>
+          <button class="main-nav__toggle" type="button" aria-label="Открыть меню"><span class="visually-hidden">Открыть меню</span></button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list">
+              <li class="main-nav__item main-nav__item--visible"><a href="index.html"><svg class="main-nav__home" width="16" height="16"><use xlink:href="img/sprite.svg#icon-home"></use></svg>Home</a></li>
+              <li class="main-nav__item"><a href="web.html"><svg class="main-nav__web" width="16" height="16"><use xlink:href="img/sprite.svg#icon-web"></use></svg>Web</a></li>
+              <li class="main-nav__item"><a href="cgart.html"><svg class="main-nav__cg" width="16" height="16"><use xlink:href="img/sprite.svg#icon-cg"></use></svg>CG Art</a></li>
+              <li class="main-nav__item"><a href="about.html"><svg class="main-nav__about" width="16" height="16"><use xlink:href="img/sprite.svg#icon-about"></use></svg>About Me</a></li>
+              <li class="main-nav__item"><a href="contacts.html"><svg class="main-nav__contacts" width="16" height="16"><use xlink:href="img/sprite.svg#icon-contacts"></use></svg>Contacts</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <main class="page-main">
+        <section class="about-me">
+          <div class="">About</div>
+        </section>
+      </main>
+      <footer class="page-footer">
+        <div class="page-footer__wrapper">
+          <!--<a class="page-footer" href="#"></a>-->
+          <div class="page-footer__search">
+            <p class="page-footer__mail-tel"><strong>Mail:</strong> avvspirit@gmail.com</p>
+            <p class="page-footer__mail-tel"><strong>Tel:</strong> +79651021083</p>
+            <!--<button class="page-footer__call-button">Связаться со мной</button>-->
+          </div>
+          <div class="page-footer__social-wrapper">
+            <div class="page-footer-social">
+              <ul class="page-footer__list">
+                <li class="page-footer__item">
+                  <a class="page-footer__link page-footer__link--facebook" href="https://www.facebook.com/avvspirit" tabindex="0" aria-label="Перейти в Facebook">
+                    <span class="visually-hidden">Facebook</span>
+                    <svg class="page-footer__facebook" width="16" height="16"><use xlink:href="img/sprite.svg#icon-facebook"></use></svg>
+                    <span class="page-footer__description">Follow me on Facebook</span>
+                  </a>
+                </li>
+                <li class="page-footer__item">
+                  <a class="page-footer__link page-footer__link--telegram" href="https://t.me/avv_spirit" tabindex="0" aria-label="Перейти в Telegram">
+                    <span class="visually-hidden">Telegram</span>
+                    <svg class="page-footer__telegram" width="16" height="16"><use xlink:href="img/sprite.svg#icon-telegram"></use></svg>
+                    <span class="page-footer__description">Follow me on Telegram</span>
+                  </a>
+                </li>
+                <li class="page-footer__item">
+                  <a class="page-footer__link page-footer__link--instagram" href="https://www.instagram.com/avv_spirit/" tabindex="0" aria-label="Перейти в Instagram">
+                    <span class="visually-hidden">Instagram</span>
+                    <svg class="page-footer__instagram" width="16" height="16"><use xlink:href="img/sprite.svg#icon-instagram"></use></svg>
+                    <span class="page-footer__description">Follow me on Instagram</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-      </div>
+        <div class="page-footer__copyright">
+          <span>© 2020, Adventure-AVV | All rights are mine :) | Version 1.0</span>
+        </div>
+      </footer>
     </div>
-    <div class="page-footer__copyright">
-      <span>© 2020, Adventure-AVV | All rights are mine :) | Version 1.0</span>
-    </div>
-  </footer>
-</div>
-</body>
+  </body>
 </html>
