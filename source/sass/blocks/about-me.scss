@@ -1,24 +1,75 @@
 .about-me {
-  width: auto;
-  color: $white;
-  margin-top: 100px;
-}
-
-.about-me__wrapper {
   display: flex;
-  justify-content: center;
   flex-direction: column;
   align-items: center;
+  color: $white;
+  padding: 0 200px;
+  margin-top: -250px;
+  z-index: 1;
 }
 
-.about-me__background {
-  position: relative;
-  width: auto;
-  min-height: 400px;
-  background-image: url("../img/about-background.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 70% 38%;
-  margin: 0;
-  padding: 0;
+.about-me__welcome {
+  font-size: 40px;
+}
+
+.about-me span {
+  //background-image: linear-gradient(to right top, #39ffff, #00e9ff, #00d0ff, #00b5ff, #0098ff, #2a8aff, #5478ff, #7a61ff, #9d5bff, #bd53ff, #dc46ff, #fa33ff);
+  text-shadow:
+    0 0 10px rgba(57, 255, 255, 0.8),
+    0 0 20px rgba(0, 233, 255, 0.8),
+    0 0 22px rgba(0, 208, 255, 0.8),
+    0 0 40px rgba(0, 181, 255, 0.8),
+    0 0 60px rgba(219, 66, 217, 0.8),
+    0 0 80px rgba(219, 66, 217, 0.8),
+    0 0 100px rgba(219, 66, 217, 0.5),
+    0 0 140px rgba(219, 66, 217, 0.5),
+    0 0 200px rgba(219, 66, 217, 0.5);
+  animation: neon 4s infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes neon {
+  0% {
+    opacity: 1;
+  }
+
+  45% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  55% {
+    opacity: 1;
+  }
+
+  60% {
+    opacity: 0;
+  }
+
+  63% {
+    opacity: 1;
+  }
+
+  93% {
+    opacity: 1;
+  }
+
+  95% {
+    opacity: 0;
+  }
+
+  97% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.about-me__description {
+  margin-top: 160px;
 }

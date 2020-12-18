@@ -1,6 +1,6 @@
 .cg-avatar {
   width: auto;
-  margin-top: 130px;
+  margin-top: 56px;
 }
 
 .cg-avatar__about {
@@ -19,8 +19,9 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+  padding-top: 60px;
   color: $white;
-
+  background-image: radial-gradient(circle, #080131, #180022, #190015, #120008, #000000);
   box-sizing: border-box;
   border-bottom: 1px solid $gray-black;
 }
