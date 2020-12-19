@@ -1,4 +1,5 @@
 .intro__wrapper {
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -8,6 +9,98 @@
   margin-top: 100px;
   padding: 15px;
 }
+
+.intro__wrapper::before {
+  position: absolute;
+  content: "";
+  width: 700px;
+  height: 9px;
+  background-image: linear-gradient(to right, #033bfd, #7933f7, #ab29f0, #d122e8, #f121df);
+  top: -3px;
+  right: 46px;
+  transform: skewX(-48deg);
+
+  box-shadow:
+    0 0 10px rgba(57, 255, 255, 0.8),
+    0 0 20px rgba(0, 233, 255, 0.8),
+    0 0 22px rgba(0, 208, 255, 0.8),
+    0 0 40px rgba(0, 181, 255, 0.8),
+    0 0 60px rgba(219, 66, 217, 0.8),
+    0 0 80px rgba(219, 66, 217, 0.8),
+    0 0 100px rgba(219, 66, 217, 0.5),
+    0 0 140px rgba(219, 66, 217, 0.5),
+    0 0 200px rgba(219, 66, 217, 0.5);
+  animation: neon 4s infinite;
+  animation-timing-function: linear;
+}
+
+.intro__wrapper::after {
+  position: absolute;
+  content: "";
+  width: 700px;
+  height: 9px;
+  background-image: linear-gradient(to left, #033bfd, #7933f7, #ab29f0, #d122e8, #f121df);
+  bottom: 0;
+  left: 80px;
+  transform: skewX(-48deg);
+  z-index: 0;
+
+  box-shadow:
+    0 0 10px rgba(57, 255, 255, 0.8),
+    0 0 20px rgba(0, 233, 255, 0.8),
+    0 0 22px rgba(0, 208, 255, 0.8),
+    0 0 40px rgba(0, 181, 255, 0.8),
+    0 0 60px rgba(219, 66, 217, 0.8),
+    0 0 80px rgba(219, 66, 217, 0.8),
+    0 0 100px rgba(219, 66, 217, 0.5),
+    0 0 140px rgba(219, 66, 217, 0.5),
+    0 0 200px rgba(219, 66, 217, 0.5);
+  animation: neon 6s infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes neon {
+  0% {
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 0;
+  }
+
+  45% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  55% {
+    opacity: 1;
+  }
+
+  60% {
+    opacity: 0;
+  }
+
+  93% {
+    opacity: 1;
+  }
+
+  95% {
+    opacity: 0;
+  }
+
+  97% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 
 .intro__text {
   position: relative;
@@ -20,7 +113,7 @@
   padding-left: 32px;
   background-color: $gray-black;
   border-radius: 20px;
-  z-index: 0;
+  z-index: 1;
 }
 
 .intro__text::before {
