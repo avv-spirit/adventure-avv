@@ -1,0 +1,102 @@
+.contacts {
+  width: auto;
+  margin-top: 156px;
+  display: flex;
+}
+
+.contacts__wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 50px;
+  padding: 0 200px;
+  color: $white;
+}
+
+.contacts__wrapper::before {
+  position: absolute;
+  content: "";
+  top: -80px;
+  left: 100px;
+  width: 450px;
+  height: 9px;
+  background-color: $cyberpunk;
+  transform: skewX(-48deg);
+  box-shadow:
+    0 0 10px rgba(254, 255, 212, 0.8),
+    0 0 20px rgba(255, 252, 167, 0.8),
+    0 0 22px rgba(227, 228, 0, 0.8),
+    0 0 40px rgba(255, 254, 99, 0.8),
+    0 0 60px rgba(219, 66, 217, 0.8),
+    0 0 80px rgba(219, 66, 217, 0.8),
+    0 0 100px rgba(219, 66, 217, 0.5),
+    0 0 140px rgba(219, 66, 217, 0.5),
+    0 0 200px rgba(0, 181, 255, 0.8);
+}
+
+.contacts__wrapper::after {
+  position: absolute;
+  content: "";
+  top: -80px;
+  right: 100px;
+  width: 450px;
+  height: 9px;
+  background-color: $cyberpunk;
+  transform: skewX(48deg);
+  box-shadow:
+    0 0 10px rgba(254, 255, 212, 0.8),
+    0 0 20px rgba(255, 252, 167, 0.8),
+    0 0 22px rgba(227, 228, 0, 0.8),
+    0 0 40px rgba(255, 254, 99, 0.8),
+    0 0 60px rgba(219, 66, 217, 0.8),
+    0 0 80px rgba(219, 66, 217, 0.8),
+    0 0 100px rgba(219, 66, 217, 0.5),
+    0 0 140px rgba(219, 66, 217, 0.5),
+    0 0 200px rgba(0, 181, 255, 0.8);
+}
+
+
+.contacts__wrapper h1 {
+  font-size: 40px;
+  border-bottom: 6px solid $art-blue;
+  padding-bottom: 24px;
+}
+
+.contacts__wrapper h2 {
+  font-size: 30px;
+}
+
+.contacts__logo {
+  width: 120px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.contacts__social {
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+  border-top: 1px solid $gray-border;
+  border-bottom: 1px solid $gray-border;
+}
+
+.contacts__item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-left: 30px;
+}
+
+.contacts__item p {
+  padding-left: 15px;
+}
+
+.contacts__web {
+  display: flex;
+  flex-direction: row;
+}
