@@ -34,3 +34,16 @@
 .cg-gallery__wrapper {
   display: block;
 }
+
+.cg-gallery__artstation {
+  margin: 0;
+  padding-bottom: 20px;
+  text-decoration: none;
+  color: $art-blue;
+  transition-duration: 0.4s;
+}
+
+.cg-gallery__artstation:hover {
+  color: $art-blue-hover;
+  transition: all 0.5s ease;
+}
