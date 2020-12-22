@@ -88,3 +88,15 @@
 .web__item a:hover::after {
   opacity: 0.8;
 }
+
+@media (max-width: $desktop-width) {
+  .web__container {
+    width: 100%;
+  }
+}
+
+@media (max-width: $tablet-wide) {
+  .web__container {
+    width: 100%;
+  }
+}

@@ -1,0 +1,83 @@
+.site-list__item {
+  position: relative;
+  display: flex;
+}
+
+.site-list__item:hover {
+  background-color: #333333;
+}
+
+.site-list__item--active {
+  display: flex;
+}
+
+.site-list__item__home {
+  width: 14px;
+  height: 14px;
+  margin-right: 8px;
+  margin-bottom: 2px;
+  fill: $white;
+}
+
+.site-list__item__web {
+  width: 14px;
+  height: 14px;
+  margin-right: 8px;
+  margin-bottom: 2px;
+  fill: $white;
+}
+
+.site-list__item__cg {
+  width: 14px;
+  height: 14px;
+  margin-right: 8px;
+  fill: $white;
+}
+
+.site-list__item__about {
+  width: 14px;
+  height: 14px;
+  margin-right: 8px;
+  margin-bottom: 1px;
+  fill: $white;
+}
+
+.site-list__item__contacts {
+  width: 14px;
+  height: 14px;
+  margin-right: 8px;
+  margin-bottom: 1px;
+  fill: $white;
+}
+
+.site-list__item a {
+  display: flex;
+  align-items: center;
+  padding: 12px 21px;
+
+  font-size: $font-small;
+  line-height: 24px;
+  font-weight: 600;
+  color: #ffffff;
+  text-decoration: none;
+
+  &:hover .site-list__item__home {
+    fill: $art-blue;
+  }
+
+  &:hover .site-list__item__web {
+    fill: $art-blue;
+  }
+
+  &:hover .site-list__item__cg {
+    fill: $art-blue;
+  }
+
+  &:hover .site-list__item__about {
+    fill: $art-blue;
+  }
+
+  &:hover .site-list__item__contacts {
+    fill: $art-blue;
+  }
+}
