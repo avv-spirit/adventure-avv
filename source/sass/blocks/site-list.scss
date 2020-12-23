@@ -81,3 +81,9 @@
     fill: $art-blue;
   }
 }
+
+@media (max-width: $tablet-width) {
+  .site-list__item {
+    border-bottom: 1px solid $gray-border;
+  }
+}
