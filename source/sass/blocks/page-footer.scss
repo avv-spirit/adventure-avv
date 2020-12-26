@@ -164,6 +164,14 @@
 @media (max-width: $tablet-width) {
   .page-footer__list {
     padding: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .page-footer__item {
+    width: 50%;
+    align-items: center;
+    justify-content: center;
   }
 
   .page-footer__search {
@@ -172,5 +180,10 @@
 
   .page-footer__search p:first-child {
     margin: 0;
+  }
+
+  .page-footer__copyright span {
+    padding: 0 10px;
+    text-align: center;
   }
 }

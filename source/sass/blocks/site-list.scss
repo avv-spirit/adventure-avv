@@ -86,4 +86,8 @@
   .site-list__item {
     border-bottom: 1px solid $gray-border;
   }
+
+  .site-list__item a {
+    width: 100%;
+  }
 }
