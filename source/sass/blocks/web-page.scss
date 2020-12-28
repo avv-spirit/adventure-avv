@@ -1,0 +1,98 @@
+.web-page {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  color: $white;
+}
+
+.web-page__head {
+  display: flex;
+  flex-direction: column;
+  padding: 0 100px;
+  background-image: linear-gradient(to right, #000000, #060303, #0c0705, #110a06, #130e07, #241d0f, #332c13, #403d17, #685f1c, #94821f, #c7a521, #fec922);
+  //background-image: linear-gradient(to right, #000000, #070302, #0d0603, #0f0a02, #0e0f04, #18210c, #193314, #0a4720, #007229, #009f2d, #00ce29, #00ff10);
+}
+
+.web-page__sign {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+  padding-left: 150px;
+}
+
+.web-page__info {
+  padding-top: 150px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: $font-portfolio;
+}
+
+.web-page__info h1 {
+  padding-right: 20px;
+  //border-bottom: 6px solid #fec922;
+  text-shadow:
+    0 0 10px rgba(89, 78, 47, 0.8),
+    0 0 20px rgba(128, 115, 76, 0.8),
+    0 0 22px rgba(153, 135, 80, 0.8),
+    0 0 40px rgba(185, 160, 80, 0.8),
+    0 0 60px rgba(193, 165, 75, 0.8),
+    0 0 80px rgba(204, 173, 73, 0.8),
+    0 0 100px rgba(218, 183, 70, 0.8),
+    0 0 140px rgba(240, 194, 49, 0.8),
+    0 0 200px rgba(254, 201, 34, 0.9);
+}
+
+.web-page__sign span {
+  font-size: $font-about;
+  color: #fec922;
+  text-shadow:
+    0 0 10px rgba(89, 78, 47, 0.4),
+    0 0 20px rgba(128, 115, 76, 0.4),
+    0 0 22px rgba(153, 135, 80, 0.4),
+    0 0 40px rgba(185, 160, 80, 0.4),
+    0 0 60px rgba(193, 165, 75, 0.4),
+    0 0 80px rgba(204, 173, 73, 0.4),
+    0 0 100px rgba(218, 183, 70, 0.4),
+    0 0 140px rgba(240, 194, 49, 0.4),
+    0 0 200px rgba(254, 201, 34, 0.4);
+}
+
+.web-page__wrapper {
+  width: 100%;
+  padding: 30px 250px;
+  display: flex;
+  flex-direction: column;
+}
+
+.web-page__projects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.web-page__title {
+  width: 120px;
+  padding-bottom: 6px;
+  border-bottom: 6px solid #fec922;
+}
+
+@media (max-width: $tablet-width) {
+  .web-page__head {
+    padding: 0 50px;
+  }
+
+  .web-page__sign {
+    padding-left: 0;
+  }
+
+  .web-page__sign span {
+    padding-top: 14px;
+  }
+
+  .web-page__wrapper {
+    padding: 0 50px;
+  }
+}
