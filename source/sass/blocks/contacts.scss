@@ -186,6 +186,11 @@
     width: 0;
   }
 
+  .contacts__wrapper::after {
+    width: 80%;
+    right: 10%;
+  }
+
   .contacts__wrapper p {
     padding: 0 10px;
     text-align: center;
@@ -197,6 +202,14 @@
   }
 
   .contacts__social:first-child {
+    padding-left: 0;
+  }
+
+  .contacts__web {
+    flex-wrap: wrap;
+  }
+
+  .contacts__item:first-child {
     padding-left: 0;
   }
 }

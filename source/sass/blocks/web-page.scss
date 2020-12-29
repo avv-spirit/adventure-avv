@@ -10,7 +10,7 @@
   flex-direction: column;
   padding: 0 100px;
   background-image: linear-gradient(to right, #000000, #060303, #0c0705, #110a06, #130e07, #241d0f, #332c13, #403d17, #685f1c, #94821f, #c7a521, #fec922);
-  //background-image: linear-gradient(to right, #000000, #070302, #0d0603, #0f0a02, #0e0f04, #18210c, #193314, #0a4720, #007229, #009f2d, #00ce29, #00ff10);
+  border-bottom: 1px solid #222222;
 }
 
 .web-page__sign {
@@ -75,6 +75,7 @@
 .web-page__projects p {
   display: flex;
   padding: 0 10px;
+  margin: 0;
 }
 
 .web-page__portfolio {
@@ -172,6 +173,7 @@
 
   .web-page__projects p {
     padding: 0 10px;
+    margin-top: 10px;
   }
 
   .web-page__portfolio {
@@ -192,5 +194,13 @@
 
   .web-page__sign span {
     padding-top: 14px;
+  }
+
+  .web-page__item {
+    width: 310px;
+  }
+
+  .web-page__link {
+    width: auto;
   }
 }
