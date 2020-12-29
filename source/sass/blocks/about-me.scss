@@ -98,6 +98,8 @@
   .about-me__welcome {
     font-size: 30px;
     line-height: 30px;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .about-me__description {

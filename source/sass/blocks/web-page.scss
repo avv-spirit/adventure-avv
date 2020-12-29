@@ -61,7 +61,7 @@
 
 .web-page__wrapper {
   width: 100%;
-  padding: 30px 250px;
+  padding: 30px 0;
   display: flex;
   flex-direction: column;
 }
@@ -69,17 +69,119 @@
 .web-page__projects {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   margin-top: 50px;
 }
 
+.web-page__projects p {
+  display: flex;
+  padding: 0 10px;
+}
+
+.web-page__portfolio {
+  padding: 0 200px;
+}
+
 .web-page__title {
-  width: 120px;
+  width: 104px;
   padding-bottom: 6px;
   border-bottom: 6px solid #fec922;
 }
 
+.web-page__item {
+  display: flex;
+  width: 320px;
+  height: 50%;
+  margin: 4px;
+  box-sizing: border-box;
+  border: 1px solid #222222;
+  transition-duration: 0.7s;
+}
+
+.web-page__item img {
+  width: 380px;
+  height: 340px;
+  object-fit: cover;
+}
+
+.web-page__item:hover {
+  border: 1px solid #333333;
+  cursor: pointer;
+}
+
+.web-page__link {
+  display: flex;
+}
+
+.web-page__item a {
+  display: flex;
+  position: relative;
+  width: 320px;
+}
+
+.web-page__item a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.web-page__item a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../img/search.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 25%;
+  opacity: 0;
+}
+
+.web-page__item a:hover::before,
+.web-page__item a:hover::after {
+  opacity: 0.8;
+}
+
+@media (max-width: $tablet-wide) {
+  .web-page__wrapper {
+    padding: 30px 0;
+  }
+
+  .web-page__portfolio {
+    padding: 0 50px;
+  }
+}
+
 @media (max-width: $tablet-width) {
+  .web-page__wrapper {
+    padding: 0;
+  }
+
+  .web-page__projects {
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .web-page__projects p {
+    padding: 0 10px;
+  }
+
+  .web-page__portfolio {
+    padding: 0 10px;
+  }
+
+  .web-page__title {
+    margin-left: 10px;
+  }
+
   .web-page__head {
     padding: 0 50px;
   }
@@ -90,9 +192,5 @@
 
   .web-page__sign span {
     padding-top: 14px;
-  }
-
-  .web-page__wrapper {
-    padding: 0 50px;
   }
 }
