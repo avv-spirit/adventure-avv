@@ -14,39 +14,6 @@
 
   background-color: $black;
 }
-/*
-.scroll-btn {
-  display: none;
-  position: fixed;
-  width: 40px;
-  height: 40px;
-  right: 50px;
-  bottom: 30px;
-
-  border: 0;
-  border-radius: 30px;
-  background-size: 60%;
-  background-color: $white;
-  //background-image: url("../img/arrow-button.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  transform: rotate(180deg);
-  cursor: pointer;
-}
-
-.scroll-btn:hover {
-  width: 41px;
-  height: 41px;
-  opacity: 0.8;
-  background-size: 61%;
-}
-*/
-/*@media (max-width: $tablet-width) {
-  .body-wrapper {
-    width: auto;
-    margin: 0;
-  }
-}*/
 
 @media (max-width: $tablet-width) {
   .body-wrapper {
