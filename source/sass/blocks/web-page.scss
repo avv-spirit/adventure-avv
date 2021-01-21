@@ -80,14 +80,18 @@
   margin-top: 50px;
 }
 
+.web-page__projects h3 {
+  padding-left: 10px;
+  margin-top: 0;
+}
+
 .web-page__projects p {
   display: flex;
-  padding: 0 10px;
+  padding: 0 10px 10px 10px;
   margin: 0;
 }
 
 .web-page__portfolio {
-  //padding: 0 200px;
   width: auto;
   padding: 0 16%;
   display: flex;
@@ -184,8 +188,12 @@
     align-items: center;
   }
 
+  .web-page__projects h3 {
+    margin-top: 19px;
+  }
+
   .web-page__projects p {
-    padding: 0 10px;
+    padding: 0 10px 10px 10px;
     margin-top: 10px;
   }
 
