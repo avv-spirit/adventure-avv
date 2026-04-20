@@ -1,0 +1,5 @@
+CREATE TABLE IF NOT EXISTS users (id INT AUTO_INCREMENT PRIMARY KEY, username VARCHAR(50) UNIQUE NOT NULL, password VARCHAR(255) NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4; 
+CREATE TABLE IF NOT EXISTS content (id INT AUTO_INCREMENT PRIMARY KEY, content_key VARCHAR(50) UNIQUE NOT NULL, content_value TEXT NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4; 
+CREATE TABLE IF NOT EXISTS projects (id INT AUTO_INCREMENT PRIMARY KEY, title VARCHAR(255) NOT NULL, description TEXT NOT NULL, image VARCHAR(255), link VARCHAR(255), tag VARCHAR(50) DEFAULT 'other', created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4; 
+INSERT INTO users (username,password) VALUES ('admin','admin321') ON DUPLICATE KEY UPDATE username=VALUES(username);
+INSERT IGNORE INTO content (content_key, content_value) VALUES ('site_title','Adventure AVV'),('subtitle','Я джуниор веб-разработчик и начинающий 3D-художник'),('about','Мне нравится искусство, путешествия и 3D-графика. Я делаю этот сайт как личный проект.'),('contacts','Email: avvspirit@gmail.com');
